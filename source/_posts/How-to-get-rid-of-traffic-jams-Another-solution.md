@@ -23,7 +23,10 @@ An example is shown in the figure. User 1, 2, 3 Live side by side and work in on
 
 I thought about how to create such a service, talked with people, as a result, there was not enough technology to implement this project. I knew that soon they will appear. And now the end of 2021, they appeared and I quickly began to implement the idea.
 
-In the end, it turned out this @RouteCabBot Short Descriptionhttps://t.me/routecabRU/12
+In the end, it turned out this BOT https://t.me/RouteCabBot 
+
+Short Description
+- https://t.me/routecabRU/12
 
 ##### Why is this a cool solution?
 
