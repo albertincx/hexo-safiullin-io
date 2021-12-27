@@ -9,5 +9,11 @@ Now, as you know, you don't need to do anything from scratch, because there is a
 
 And so we have a task to create a puzzle game.
 What do we need to get started?
-Of course the finished puzzle game, I found it here 
+Of course the finished puzzle game, I found it here
 https://github.com/doochik/Puzzler
+
+Information is being supplemented ....
+
+In the end, it turned out this
+
+https://puzzle.safiullin.io/
