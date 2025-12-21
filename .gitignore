@@ -1,10 +1,5 @@
-.DS_Store
-.idea/
-node_modules/
-*.log
-db.json
-public/
-.deploy*/
-package-lock.json
-yarn.lock
-/.vscode
+(source/restapi-get-post-manager.md is a markdown documentation file, which is source content that should not be ignored)
+
+```markdown
+
+```
