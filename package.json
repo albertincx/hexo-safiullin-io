@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "hexo": {
-    "version": "7.3.0"
+    "version": "8.1.2"
   },
   "scripts": {
     "build": "hexo generate",
@@ -13,34 +13,34 @@
     "clean": "hexo clean"
   },
   "dependencies": {
-    "cheerio": "^0.22.0",
-    "hexo": "^7.1.1",
+    "cheerio": "^1.2.0",
+    "hexo": "^8.1.2",
     "hexo-clean-css": "^2.0.0",
     "hexo-filter-nofollow": "^2.0.2",
-    "hexo-fs": "^4.1.1",
+    "hexo-fs": "^5.0.1",
     "hexo-generator-archive": "^2.0.0",
-    "hexo-generator-feed": "^3.0.0",
+    "hexo-generator-feed": "^4.0.0",
     "hexo-generator-sitemap": "^3.0.1",
-    "hexo-renderer-marked": "^6.2.0",
+    "hexo-renderer-marked": "^7.0.1",
     "hexo-generator-category": "2.0.0",
     "hexo-renderer-pug": "^3.0.0",
     "hexo-renderer-stylus": "^3.0.1",
     "hexo-server": "^3.0.0",
-    "hexo-generator-index": "^3.0.0",
+    "hexo-generator-index": "^4.0.0",
     "hexo-generator-tag": "2.0.0",
     "hexo-renderer-ejs": "2.0.0",
-    "jquery": "^3.7.1",
+    "jquery": "^4.0.0",
     "hexo-tag-embed": "^1.0.0",
     "hexo-uglify": "^2.0.0",
     "lunr": "2.3.9",
-    "sharp": "^0.33.3"
+    "sharp": "^0.34.5"
   },
   "devDependencies": {
-    "eslint": "^8.57.0",
-    "eslint-config-hexo": "^5.0.0",
-    "husky": "^9.0.11",
+    "eslint": "^10.4.0",
+    "eslint-config-hexo": "^6.0.0",
+    "husky": "^9.1.7",
     "imagemin-lint-staged": "^0.5.1",
-    "lint-staged": "^15.2.2"
+    "lint-staged": "^17.0.5"
   },
   "lint-staged": {
     "*.{png,jpeg,jpg,gif,svg}": [
