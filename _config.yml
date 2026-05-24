@@ -1,5 +1,5 @@
-title: Safiullin.io. Developer projects and stories of life
-nameSite: 'Safiullin.io'
+title: Safiullin.dev. Developer projects and stories of life
+nameSite: 'Safiullin.dev'
 subtitle: 'Albert Safiullin`s Blog Apps, Games, Bots'
 description: 'Albert Safiullin`s Developer blog. Stories of life, Useful apps, useful bots. Make our world better with Information technologies'
 keywords: [developer, applications, games, telegram bots, programming articles]
@@ -10,7 +10,7 @@ language:
 timezone: UTC
 canonical: true
 
-url: https://safiullin.io
+url: https://safiullin.dev
 root: /
 permalink: /:year/:month/:day/:title/
 archive_dir: archives

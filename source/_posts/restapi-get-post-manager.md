@@ -4,13 +4,11 @@ date: 2025-12-21 00:00:00
 tags: [project, api, manager, rest, get, post]
 ---
 
-# REST API GET POST Manager
-
 This project provides a simple solution for managing GET and POST requests to REST APIs.
 
 ## Project Overview
 The REST API GET POST Manager is a utility tool designed to simplify the process of sending GET and POST requests to REST APIs. It provides an easy-to-use interface for developers who need to interact with RESTful services.
-
+<!-- more -->
 ## Features
 - Simple interface for making GET requests
 - Easy form for constructing POST requests with JSON data

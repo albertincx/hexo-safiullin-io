@@ -19,4 +19,4 @@ Information is being supplemented ....
 
 In the end, it turned out this
 
-[Here is the Game](https://puzzle.safiullin.io/)
+[Here is the Game](https://puzzle.safiullin.dev/)

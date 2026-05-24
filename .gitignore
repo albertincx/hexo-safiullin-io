@@ -1,5 +1,4 @@
-(source/restapi-get-post-manager.md is a markdown documentation file, which is source content that should not be ignored)
-
-```markdown
-
-```
+.idea/
+node_modules/
+public/
+yarn.lock

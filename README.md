@@ -1,4 +1,4 @@
-# My blog Safiullin.io (Based on Hexo site)
+# My blog Safiullin.dev (Based on Hexo site)
 
 # Generated files hosted here
 
