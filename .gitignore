@@ -2,3 +2,5 @@
 node_modules/
 public/
 yarn.lock
+logs/
+build.sh
