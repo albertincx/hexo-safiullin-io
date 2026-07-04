@@ -17,10 +17,25 @@ title = __('category') + ': ' + page.category;
 } else if (is_tag()){
 title = __('tag') + ': ' + page.tag;
 }
+
+var og_description = page.description || page.excerpt || page.content;
+if (og_description) {
+  og_description = strip_html(og_description).replace(/\s+/g, ' ').trim();
+  if (og_description.length > 150) {
+    var truncated = og_description.substring(0, 150);
+    var lastSpace = truncated.lastIndexOf(' ');
+    og_description = (lastSpace > 100 ? truncated.substring(0, lastSpace) : truncated) + '...';
+  }
+}
 %>
     <title><% if (title){ %><%= title %> | <% } %><%= config.title %></title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<%- open_graph({twitter_id: theme.twitter, fb_admins: theme.fb_admins, fb_app_id: theme.fb_app_id}) %>
+<%- open_graph({
+  twitter_id: theme.twitter,
+  fb_admins: theme.fb_admins,
+  fb_app_id: theme.fb_app_id,
+  description: og_description
+}) %>
 <% if (config.feed) { %>
 <%- feed_tag() %>
 <% } else if (theme.rss) { %>
@@ -40,6 +55,41 @@ title = __('tag') + ': ' + page.tag;
 <%- css('https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css') %>
 <% } %>
 <% if (config.canonical) { %>
-    <link rel="canonical" href="<%= page.permalink %>" />
+    <link rel="canonical" href="<%= page.permalink || config.url %>" />
+<% } %>
+
+<% if (is_post()) { %>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "<%= page.title %>",
+  "datePublished": "<%= date_xml(page.date) %>",
+  "dateModified": "<%= date_xml(page.updated || page.date) %>",
+  "author": {
+    "@type": "Person",
+    "name": "<%= config.author %>"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "<%= config.title %>",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "<%= config.url %>/logo.png"
+    }
+  },
+  "description": "<%= og_description %>"
+}
+</script>
+<% } else { %>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "<%= config.title %>",
+  "url": "<%= config.url %>",
+  "description": "<%= config.description %>"
+}
+</script>
 <% } %>
 </head>
