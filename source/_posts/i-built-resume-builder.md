@@ -1,5 +1,5 @@
 ---
-title: "I built https://resume-builder-ne.web.app/"
+title: "I built a resume-builder with AI in 1 prompt"
 date: 2026-07-04 10:12:00
 tags: [web app, tools, productivity]
 ---
